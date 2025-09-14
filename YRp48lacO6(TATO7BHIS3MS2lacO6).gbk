@@ -1,0 +1,319 @@
+LOCUS       YRp48lacO6(TATO7        3070 bp    DNA     circular SYN 07-JAN-2025
+DEFINITION  synthetic circular DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 3070)
+  AUTHORS   Macapp
+  TITLE     Direct Submission
+  JOURNAL   Exported Sep 9, 2025 from SnapGene 8.0.3
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..3070
+                     /mol_type="other DNA"
+                     /organism="synthetic DNA construct"
+     CDS             1..591
+                     /codon_start=1
+                     /gene="S. cerevisiae TRP1"
+                     /product="phosphoribosylanthranilate isomerase, required 
+                     for tryptophan biosynthesis"
+                     /label=TRP1
+                     /note="yeast auxotrophic marker"
+                     /translation="LDSDADLLGIICVPNRKRTIDPVIARKISSLVKAYKNSSGTPKYL
+                     VGVFRNQPKEDVLALVNDYGIDIVQLHGDESWQEYQEFLGLPVIKRLVFPKDCNILLSA
+                     ASQKPHSFIPLFDSEAGGTGELLDWNSISDWVGRQESPESLHFMLAGGLTPENVGDALR
+                     LNGVIGVDVSGGVETNGVKDSNKIANFVKNAKK"
+     misc_feature    221..229
+                     /label=resemb
+     misc_feature    270..278
+                     /label=resemb
+     misc_feature    300..308
+                     /label=resemb
+     misc_feature    322..330
+                     /label=resemb
+     misc_feature    347..355
+                     /label=resemb
+     rep_origin      430..883
+                     /label=ARS1
+                     /note="S. cerevisiae autonomously replicating sequence 
+                     ARS1"
+     misc_feature    545..553
+                     /label=resemb
+     misc_feature    588..596
+                     /label=resemb
+     misc_feature    595..603
+                     /label=resemb
+     misc_feature    599..607
+                     /label=resemb
+     primer_bind     633..670
+                     /label=TATO_Pst_R_Int
+     rep_origin      complement(671..681)
+                     /direction=LEFT
+                     /label=ACS
+     misc_feature    712..720
+                     /label=resemb
+     misc_feature    729..737
+                     /label=resemb
+     misc_feature    766..774
+                     /label=resemb
+     misc_feature    837..845
+                     /label=Halfsite
+     primer_bind     complement(839..866)
+                     /label=TRP1ARS1_Nae_Bg
+     primer_bind     864..887
+                     /label=MY_19
+     primer_bind     complement(885..937)
+                     /label=dPolyT_R
+     primer_bind     complement(885..908)
+                     /label=GCN4UAS_MY32_R
+     primer_bind     885..907
+                     /label=MY_32
+     misc_feature    894..902
+                     /label=resemb
+     promoter        909..925
+                     /label=Poly dT:dA
+     protein_bind    938..943
+                     /label=UASgcn4
+                     /bound_moiety="Gcn4"
+     promoter        944..955
+                     /label=Poly dT:dA
+     primer_bind     952..998
+                     /label=dPolyT_F
+     TATA_signal     958..984
+                     /label=Tc
+     primer_bind     complement(963..1006)
+                     /label=601his3R
+     misc_feature    977..985
+                     /label=resemb
+     misc_feature    981..989
+                     /label=resemb
+     TATA_signal     992..997
+                     /label=TR
+     primer_bind     complement(1003..1040)
+                     /label=Biohis3_156_R
+     primer_bind     complement(1035..1055)
+                     /label=Biohis3_171_R
+     5'UTR           1037
+                     /label=+1 TSS
+     5'UTR           1049
+                     /label=+13 TSS
+     5'UTR           1058
+                     /label=+22 TSS
+     CDS             1060..1741
+                     /codon_start=1
+                     /label=HIS3 ORF
+                     /translation="MTEQKALVKRITNETKIQIAISLKGGPLAARASAVHRALDLPRKR
+                     GRSSSRTGHTIASD*RPHRYRVSGPYDTCSGQAFRLVANR*VHW*LTHRRPSHH*RLRD
+                     CSRSSF*RGPRGRAWSKKVWIRICAFG*GTFQSGGRSFEQAVRSCRTWFAKGESRRSLL
+                     RDDPAFS*KLCRG*QNYPPR*LSARQE*SSP**ECVQGSCGCHKRSHLAQWYQRCSLHQ
+                     RCSYV"
+     misc_feature    1060..1068
+                     /label=Halfsite
+     primer_bind     complement(1086..1107)
+                     /label=MY_21
+     ncRNA           complement(1088..1719)
+                     /label=XUT_15R-327 ncRNA
+                     /ncRNA_class="antisense_RNA"
+     misc_feature    1090..1098
+                     /label=resemb
+     misc_feature    1105..1113
+                     /label=resemb
+     misc_feature    1147..1165
+                     /label=MS2 loop
+     primer_bind     complement(1151..1170)
+                     /label=MS2_R
+     misc_feature    1155..1163
+                     /label=resemb
+     misc_feature    1191..1199
+                     /label=resemb
+     misc_feature    1271..1279
+                     /label=resemb
+     misc_feature    1326..1334
+                     /label=resemb
+     misc_feature    1330..1338
+                     /label=resemb
+     primer_bind     complement(1451..1471)
+                     /label=Biohis3_587_R
+     misc_feature    1452..1460
+                     /label=resemb
+     misc_feature    1539..1547
+                     /label=resemb
+     misc_feature    1556..1564
+                     /label=resemb
+     misc_feature    1625..1633
+                     /label=resemb
+     misc_feature    1658..1666
+                     /label=resemb
+     primer_bind     complement(1715..1741)
+                     /label=HIS3_d3UTR_R
+     3'UTR           1742..1823
+                     /label=HIS3 3' UTR
+     TATA_signal     complement(1774..1781)
+                     /label=ST6851 TATA
+     primer_bind     1824..1854
+                     /label=HIS3_d3UTR_F
+     misc_feature    1846..1854
+                     /label=Halfsite
+     misc_feature    1857..1865
+                     /label=resemb
+     misc_feature    1871..1879
+                     /label=Halfsite
+     primer_bind     1887..1912
+                     /label=HIS3_d3NDR_F2
+     misc_feature    1894..1901
+                     /label=Small insertion detected by plasmidsaurus
+     misc_feature    1919..1927
+                     /label=resemb
+     primer_bind     1934..1953
+                     /label=HIS3_d3NDR_F1
+     primer_bind     complement(1934..1953)
+                     /label=His3R
+     misc_feature    1997..2005
+                     /label=resemb
+     primer_bind     2048..2075
+                     /label=HIS3_d3UTR_F3
+     misc_feature    2069..2077
+                     /label=resemb
+     misc_feature    2184..2192
+                     /label=resemb
+     misc_feature    2195..2203
+                     /label=resemb
+     protein_bind    2244..2252
+                     /label=ChIP exo signal by Pugh lab
+                     /bound_moiety="GAL4"
+     protein_bind    2266..2282
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     protein_bind    2293..2309
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     protein_bind    2320..2336
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     protein_bind    2347..2363
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     protein_bind    2374..2390
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     protein_bind    2401..2417
+                     /label=lac operator
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to 
+                     inhibit transcription in E. coli. This inhibition can be 
+                     relieved by adding lactose or 
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     primer_bind     complement(2422..2476)
+                     /label=scrambHSM13_R
+     misc_feature    2442..2450
+                     /label=resemb
+     misc_feature    2449..2457
+                     /label=resemb
+     misc_feature    2457..2465
+                     /label=Halfsite
+     primer_bind     complement(2461..2477)
+                     /label=M13 rev
+                     /note="common sequencing primer, one of multiple similar 
+                     variants"
+     misc_feature    2520..2528
+                     /label=resemb
+     primer_bind     2528..2550
+                     /label=TetO2 checker A
+     protein_bind    join(2585..2603,2604..2626,2627..2645,2646..2668,2669..2687,
+                     2688..2710,2711..2729,2730..2752,2753..2771,2772..2794,
+                     2795..2813,2814..2836,2837..2855)
+                     /label=tetracycline response element
+                     /bound_moiety="tetracycline repressor TetR"
+                     /note="contains seven copies of the tetracycline operator 
+                     tetO"
+     misc_feature    2590..2598
+                     /label=resemb
+     primer_bind     complement(2866..2886)
+                     /label=TetO2 checker B
+     promoter        2885..2986
+                     /gene="S. cerevisiae TRP1"
+                     /label=TRP1 promoter
+     misc_feature    2932..2940
+                     /label=resemb
+     misc_feature    2953..2961
+                     /label=resemb
+     misc_feature    2987..2995
+                     /label=resemb
+     primer_bind     join(3049..3070,1..10)
+                     /label=TRP1ARS1Xb-EcRV
+ORIGIN
+        1 ctagattccg atgctgactt gctgggtatt atatgtgtgc ccaatagaaa gagaacaatt
+       61 gacccggtta ttgcaaggaa aatttcaagt cttgtaaaag catataaaaa tagttcaggc
+      121 actccgaaat acttggttgg cgtgtttcgt aatcaaccta aggaggatgt tttggctctg
+      181 gtcaatgatt acggcattga tatcgtccaa ctgcatggag atgagtcgtg gcaagaatac
+      241 caagagttcc tcggtttgcc agttattaaa agactcgtat ttccaaaaga ctgcaacata
+      301 ctactcagtg cagcttcaca gaaacctcat tcgtttattc ccttgtttga ttcagaagca
+      361 ggtgggacag gtgaactttt ggattggaac tcgatttctg actgggttgg aaggcaagag
+      421 agccccgaaa gcttacattt tatgttagct ggtggactga cgccagaaaa tgttggtgat
+      481 gcgcttagat taaatggcgt tattggtgtt gatgtaagcg gaggtgtgga gacaaatggt
+      541 gtaaaagact ctaacaaaat agcaaatttc gtcaaaaatg ctaagaaata ggttattact
+      601 gagtagtatt tatttaagta ttgtttgtgc acttgcctgc aggccttttg aaaagcaagc
+      661 ataaaagatc taaacataaa atctgtaaaa taacaagatg taaagataat gctaaatcat
+      721 ttggcttttt gattgattgt acaggaaaat atacatcgca gggggttgac ttttaccatt
+      781 tcaccgcaat ggaatcaaac ttgttgaaga gaatgttcac aggcgcatac gctacaatga
+      841 cccgattctt gctagccttt tctcggtctt gcaaacaacc gccccggatc cttatgcctc
+      901 ggtaatgatt ttcatttttt tttttccacc tagcggatga ctcttttttt ttcttagcga
+      961 ttggcattat cacataatga attatacatt atataaagta atgtgatttc ttcgaagaat
+     1021 atactaaaaa atgagcaggc aagataaacg aaggcaaaga tgacagagca gaaagcccta
+     1081 gtaaagcgta ttacaaatga aaccaagatt cagattgcga tctctttaaa gggtggtccc
+     1141 ctagcggcac gagcatcagc cgtgcataga gcactcgatc ttcccagaaa aagaggcaga
+     1201 agcagtagca gaacaggcca cacaatcgca agtgattaac gtccacacag gtatagggtt
+     1261 tctggaccat atgatacatg ctctggccaa gcattccggc tggtcgctaa tcgttgagtg
+     1321 cattggtgac ttacacatag acgaccatca caccactgaa gactgcggga ttgctctcgg
+     1381 tcaagctttt aaagaggccc taggggccgt gcgtggagta aaaaggtttg gatcaggatt
+     1441 tgcgcctttg gatgaggcac tttccagagc ggtggtagat ctttcgaaca ggccgtacgc
+     1501 agttgtcgaa cttggtttgc aaagggagaa agtaggagat ctctcttgcg agatgatccc
+     1561 gcattttctt gaaagctttg cagaggctag cagaattacc ctccacgttg attgtctgcg
+     1621 aggcaagaat gatcatcacc gtagtgagag tgcgttcaag gctcttgcgg ttgccataag
+     1681 agaagccacc tcgcccaatg gtaccaacga tgttccctcc accaaaggtg ttcttatgta
+     1741 gtgacaccga ttatttaaag ctgcagcata cgatatatat acatgtgtat atatgtatac
+     1801 ctatgaatgt cagtaagtat gtatacgaac agtatgatac tgaagatgac aaggtaatgc
+     1861 atcattctat acgtgtcatt ctgaacggat ccggccggat cgggcagctt agtatataaa
+     1921 tacacatgta catacctctc tccgtatcct cgtaatcatt ttcttgtatt tatcgtcttt
+     1981 tcgctgtaaa aactttatca cacttatctc aaatacactt attaaccgct tttactatta
+     2041 tcttctacgc tgacagtaat atcaaacagt gacacatatt aaacacagtg gtttctttgc
+     2101 ataaacacca tcagcctcaa gtcgtcaagt aaagatttcg tgttcatgca gatagataac
+     2161 aatctatatg ttgataatta gcgttgcctc atcaatgcga gatccgttta accggaccct
+     2221 agtgcactta ccccacgttc ggtccactgt gtgccgaact agcaattgtg agcggataac
+     2281 aattactagc aattgtgagc ggataacaat tactagcaat tgtgagcgga taacaattac
+     2341 tagcaattgt gagcggataa caattactag caattgtgag cggataacaa ttactagcaa
+     2401 ttgtgagcgg ataacaatac tagttccttc actattttaa catgtggaat tcgtaatcat
+     2461 gtcatagctg tttcctgtgt gaacactgtg tgccgaacat gctccttcac tattttaaca
+     2521 tgtggaattc cgggggtcga gatccgtatc acgaggccct ttcgtcttca ctcgagttta
+     2581 ccactcccta tcagtgatag agaaaagtga aagtcgagtt taccactccc tatcagtgat
+     2641 agagaaaagt gaaagtcgag tttaccactc cctatcagtg atagagaaaa gtgaaagtcg
+     2701 agtttaccac tccctatcag tgatagagaa aagtgaaagt cgagtttacc actccctatc
+     2761 agtgatagag aaaagtgaaa gtcgagttta ccactcccta tcagtgatag agaaaagtga
+     2821 aagtcgagtt taccactccc tatcagtgat agagaaaagt gaaagtcggg ctcggttccc
+     2881 ccggaattcg gtcgaaaaaa gaaaaggaga gggccaagag ggagggcatt ggtgactatt
+     2941 gagcacgtga gtatacgtga ttaagcacac aaaggcagct tggagtatgt ctgttattaa
+     3001 tttcacaggt agttctggtc cattggtgaa agtttgcggc ttgcagagca cagaggccgc
+     3061 agaatgtgct
+//
