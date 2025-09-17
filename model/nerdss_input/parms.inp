@@ -10,7 +10,7 @@ start parameters
     timeWrite = 1e5 # 0.1 s
     pdbWrite = 1e5
     trajWrite = 1e9
-    assocdissocwrite = false
+    assocdissocwrite = true
     overlapSepLimit = 1.0
 end parameters
 
