@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=EquiSpatial
+#SBATCH --job-name=GCN4_HIS3
 #SBATCH --time=72:0:0
 #SBATCH --partition=parallel
 #SBATCH --nodes=1

@@ -35,7 +35,7 @@ def runjobs(N_rep, current_dir, subdir='', coordinate=True, simFirstIndex=1):
 
 # parent folder
 pfolder = '/model/'
-workdir = str(Path.cwd()) + f'{pfolder}'
+workdir = str(Path.cwd()) + f'{pfolder}/ka120_KDN8E4/'
 runjobs(48, workdir, simFirstIndex=1)
 
 import time

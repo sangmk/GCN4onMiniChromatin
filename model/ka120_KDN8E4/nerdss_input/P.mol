@@ -1,0 +1,18 @@
+##
+# Transcription factors (Proteins) information file
+##
+
+Name    = P
+checkOverlap = false
+
+# translational diffusion constants 
+D       = [1.0, 1.0, 1.0] # (in nucleus plasma)
+
+# rotational diffusion constants
+Dr      = [0.014, 0.014, 0.014]
+
+# Coordinates, with states below, or
+COM      0.0000     0.0000    0.0000
+dbn      0.3000    -0.4000    0.5000 # used to bind non-specifically
+dbs      0.3000    -0.4000    0.5000 # used to bind specifically
+ref      0.0000     0.0000    0.0001
