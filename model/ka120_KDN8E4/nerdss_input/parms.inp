@@ -1,0 +1,675 @@
+# Info:
+#    GCN4 binding with HIS3 including upstream and downstream
+#    Model G-SELEX measurement by Coey and Clark, 2022
+#    For the purpose of Mini-chromatin of Zelin Wei
+#    2025-09-16
+
+start parameters
+    nItr = 1000000001 # 1e9 iterations
+    timeStep = 1 # us, the maximum timestep calculated from kbPN
+    timeWrite = 1e5 # 0.1 s
+    pdbWrite = 1e5
+    trajWrite = 1e9
+    assocdissocwrite = false
+    overlapSepLimit = 1.0
+end parameters
+
+start boundaries
+    WaterBox = [356.3, 40, 40] # VtoL = 5.7 x 10^5 nm^3
+end boundaries
+
+start molecules
+    N : 161
+    P : 5
+    S0 : 1
+    S1 : 1
+    S2 : 1
+    S3 : 1
+    S4 : 1
+    S5 : 1
+    S6 : 1
+    S7 : 1
+    S8 : 1
+    S9 : 1
+    S10 : 1
+    S11 : 1
+    S12 : 1
+    S13 : 1
+    S14 : 1
+    S15 : 1
+    S16 : 1
+    S17 : 1
+    S18 : 1
+    S19 : 1
+    S20 : 1
+    S21 : 1
+    S22 : 1
+    S23 : 1
+    S24 : 1
+    S25 : 1
+    S26 : 1
+    S27 : 1
+    S28 : 1
+    S29 : 1
+    S30 : 1
+    S31 : 1
+    S32 : 1
+    S33 : 1
+    S34 : 1
+    S35 : 1
+    S36 : 1
+    S37 : 1
+    S38 : 1
+    S39 : 1
+    S40 : 1
+    S41 : 1
+    S42 : 1
+    S43 : 1
+    S44 : 1
+    S45 : 1
+    S46 : 1
+    S47 : 1
+    S48 : 1
+    S49 : 1
+    S50 : 1
+    S51 : 1
+    S52 : 1
+end molecules
+
+start reactions
+
+  N(bs) + P(dbn) <-> N(bs!1).P(dbn!1)
+    onRate3Dka = 120.0000
+    offRatekb = 5781.1200 # KD = 80000.00 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.000007
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S0(bs) + P(dbs) <-> S0(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S1(bs) + P(dbs) <-> S1(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S2(bs) + P(dbs) <-> S2(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 9.9977 # KD = 138.35 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S3(bs) + P(dbs) <-> S3(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S4(bs) + P(dbs) <-> S4(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S5(bs) + P(dbs) <-> S5(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S6(bs) + P(dbs) <-> S6(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 20.2186 # KD = 279.79 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S7(bs) + P(dbs) <-> S7(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S8(bs) + P(dbs) <-> S8(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S9(bs) + P(dbs) <-> S9(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S10(bs) + P(dbs) <-> S10(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S11(bs) + P(dbs) <-> S11(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S12(bs) + P(dbs) <-> S12(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S13(bs) + P(dbs) <-> S13(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S14(bs) + P(dbs) <-> S14(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S15(bs) + P(dbs) <-> S15(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S16(bs) + P(dbs) <-> S16(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S17(bs) + P(dbs) <-> S17(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S18(bs) + P(dbs) <-> S18(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S19(bs) + P(dbs) <-> S19(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S20(bs) + P(dbs) <-> S20(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 20.2186 # KD = 279.79 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S21(bs) + P(dbs) <-> S21(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S22(bs) + P(dbs) <-> S22(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S23(bs) + P(dbs) <-> S23(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S24(bs) + P(dbs) <-> S24(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S25(bs) + P(dbs) <-> S25(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S26(bs) + P(dbs) <-> S26(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S27(bs) + P(dbs) <-> S27(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S28(bs) + P(dbs) <-> S28(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S29(bs) + P(dbs) <-> S29(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S30(bs) + P(dbs) <-> S30(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S31(bs) + P(dbs) <-> S31(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S32(bs) + P(dbs) <-> S32(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S33(bs) + P(dbs) <-> S33(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S34(bs) + P(dbs) <-> S34(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S35(bs) + P(dbs) <-> S35(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S36(bs) + P(dbs) <-> S36(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S37(bs) + P(dbs) <-> S37(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S38(bs) + P(dbs) <-> S38(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S39(bs) + P(dbs) <-> S39(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S40(bs) + P(dbs) <-> S40(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S41(bs) + P(dbs) <-> S41(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S42(bs) + P(dbs) <-> S42(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S43(bs) + P(dbs) <-> S43(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S44(bs) + P(dbs) <-> S44(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S45(bs) + P(dbs) <-> S45(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S46(bs) + P(dbs) <-> S46(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S47(bs) + P(dbs) <-> S47(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 20.2186 # KD = 279.79 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S48(bs) + P(dbs) <-> S48(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S49(bs) + P(dbs) <-> S49(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S50(bs) + P(dbs) <-> S50(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 51.7079 # KD = 715.54 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S51(bs) + P(dbs) <-> S51(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+  S52(bs) + P(dbs) <-> S52(bs!1).P(dbs!1)
+    onRate3Dka = 120.0000
+    offRatekb = 192.5236 # KD = 2664.17 nM
+    norm1 = [0, 0, 1]
+    norm2 = [0, 0, 1]
+    sigma = 1.00
+    assocAngles = [0.785398, 2.356194, 0.000000, M_PI, 0.000000]
+    loopcoopfactor = 1
+    bindRadSameCom = 1.1
+    area3dto1d = 10
+    
+end reactions
