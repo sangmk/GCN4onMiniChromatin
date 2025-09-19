@@ -80,7 +80,7 @@ start reactions
 
   N(bs) + P(dbn) <-> N(bs!1).P(dbn!1)
     onRate3Dka = 10.0000
-    offRatekb = 48.1760 # KD = 8000.00 nM
+    offRatekb = 481.7600 # KD = 80000.00 nM
     norm1 = [0, 0, 1]
     norm2 = [0, 0, 1]
     sigma = 1.000007
