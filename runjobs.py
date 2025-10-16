@@ -10,6 +10,8 @@ absolute_path_to_add = os.path.expanduser('~/mankun/GitHub/ionerdss/')
 # Add the absolute path to sys.path
 sys.path.append(absolute_path_to_add)
 import ionerdss as ion
+import time
+import datetime
 
 def runjobs(N_rep, current_dir, subdir='', coordinate=True, simFirstIndex=1):
     workdir = current_dir + subdir
@@ -27,21 +29,24 @@ def runjobs(N_rep, current_dir, subdir='', coordinate=True, simFirstIndex=1):
     # use ionerdss to modify parameters
     model = ion.Simulation(workdir)
     sim_indices = [i+simFirstIndex for i in range(N_rep)]
-    print(f'sim_indeces from {sim_indices[0]} to {sim_indices[-1]}')
+    print(f'sim_indeces from {sim_indices[0]} to {sim_indices[-1]}', flush=True)
     model.run_new_simulations(
         sim_indices=sim_indices, coordinate=coordinate, verbose=False, parallel=True,
         nerdss_dir='/home/msang2/mankun/nerdss_development/'
     )
+    now = datetime.datetime.now()
+    formatted_datetime = now.strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{len(sim_indices)} jobs started at {formatted_datetime}", flush=True)
 
 # parent folder
 pfolder = '/model/'
 workdir = str(Path.cwd()) + f'{pfolder}/ka120_KDN8E4/'
 runjobs(48, workdir, simFirstIndex=1)
 
-import time
-
 # Calculate the number of seconds in 3 days
-seconds_in_3_days = 3 * 24 * 60 * 60
+seconds_in_3_days = (3 * 24 * 60 - 1) * 60
 
-print(f"Program will pause for {seconds_in_3_days} seconds (3 days).")
+print(f"Program will pause for {seconds_in_3_days} seconds (3 days).", flush=True)
 time.sleep(seconds_in_3_days)
+
+print("Time limit reached.", flush=True)
